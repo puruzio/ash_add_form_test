@@ -246,6 +246,7 @@ defmodule AshAddFormTestWeb.TaskLive.Edit do
 
   def handle_event("save", _, socket) do
     output = AshPhoenix.Form.submit(socket.assigns.form)
+    IO.inspect(output, label: "save output =#################")
 
     {
       :noreply,

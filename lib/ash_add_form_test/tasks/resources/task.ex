@@ -18,8 +18,8 @@ defmodule AshAddFormTest.Tasks.Task do
 
       argument(:task_members, {:array, :map})
       change(manage_relationship(:task_members, type: :create))
-      argument(:comments, {:array, :map})
-      change(manage_relationship(:comments, type: :create))
+      # argument(:comments, {:array, :map})
+      # change(manage_relationship(:comments, type: :create))
     end
 
     update :update do
